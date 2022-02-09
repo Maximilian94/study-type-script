@@ -1,3 +1,7 @@
+// O javascript não tem o conteiro de TypeCasting, porque as variáveis são de tipo dinâmico.
+//	Porem, toda variável no TypeScript tem um tipo.
+//	TypeCasting permite voce converter o tipo de uma variável para outro
+
 //  Desta maneira o elemento esta sendo tipado como HTMLElement ou null
 const userInputElement = document.getElementById('some-id');
 
@@ -15,3 +19,6 @@ const userInputElement4 = document.getElementById(
 	'some-id'
 )! as HTMLInputElement;
 console.log(userInputElement4.value);
+
+//	Ou também podemos acessar a propriedade da seguinte forma
+let newWay = (userInputElement2 as HTMLInputElement).value;
